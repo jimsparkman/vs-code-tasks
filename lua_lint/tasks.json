@@ -1,0 +1,25 @@
+//Lua Lint - v0.1.0
+{
+	"version": "0.1.0",
+	"command": "luac",
+	"isShellCommand": true,
+	"args": ["${file}"],
+	"showOutput": "silent",
+	"tasks": [
+		{
+			"taskName": "Lua Lint",
+			"isBuildCommand": true,
+			"problemMatcher": {
+				"owner": "lua",
+				"fileLocation": ["absolute"],		
+				"pattern": {
+					"regexp": "luac: (.+?\\..+?):(\\d+): (.+)",
+					"file": 1,
+					"location": 2,
+					"code": 3,
+					"message": 3
+				}
+			}
+		}
+	]
+}
