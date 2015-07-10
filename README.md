@@ -25,3 +25,7 @@ pip install pylint
 # Lua Linter
 
 Uses luac to error check code. Generally included in lua distro.
+
+# Ruby Linter
+
+Uses ruby -wc to error check code.

@@ -1,0 +1,18 @@
+// Ruby linting with ruby -wc
+{
+	"version": "0.1.0",
+	"command": "ruby",
+	"isShellCommand": true,
+	"args": ["-wc","${file}"],
+	"showOutput": "silent",
+	"problemMatcher": {
+		"fileLocation": ["absolute"],		
+		"pattern": {
+			"regexp": "(.+):(\\d+): (.+)",
+			"file": 1,
+			"line": 2,
+			"code": 3,
+			"message": 3
+		}
+	}
+}
