@@ -1,6 +1,6 @@
 #Build Task Add-ons for Visual Studio Code
 
-Misc. build tasks for the VS Code Editor
+Misc. build tasks for the VS Code Editor. Syntax errors will be identified by Visual Studio's trademark red squiggly underlines and in the error listing (OSX: Cmd+Shift+M), in addition to the status bar.
 
 Installation:
 
@@ -14,8 +14,14 @@ Command Palette -> Tasks: Configure Task Runner.
 Mac OSX: Cmd+Shift+B
 ```  
 
+# Python Linter
+
+Uses pylint to error check code.
+
+```
+pip install pylint
+```
+
 # Lua Linter
 
-Uses luac to error check code. Syntax errors will be identified by Visual Studio's trademark red squiggly underlines and in the error listing (OSX: Cmd+Shift+M), in addition to the status bar.
-
- 
+Uses luac to error check code. Generally included in lua distro.

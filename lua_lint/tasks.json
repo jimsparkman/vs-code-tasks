@@ -1,25 +1,19 @@
-//Lua Lint - v0.1.0
+// Lua linting with luac
 {
 	"version": "0.1.0",
 	"command": "luac",
 	"isShellCommand": true,
 	"args": ["${file}"],
 	"showOutput": "silent",
-	"tasks": [
-		{
-			"taskName": "Lua Lint",
-			"isBuildCommand": true,
-			"problemMatcher": {
-				"owner": "lua",
-				"fileLocation": ["absolute"],		
-				"pattern": {
-					"regexp": "luac: (.+?\\..+?):(\\d+): (.+)",
-					"file": 1,
-					"location": 2,
-					"code": 3,
-					"message": 3
-				}
-			}
+	"problemMatcher": {
+		"owner": "lua",
+		"fileLocation": ["absolute"],		
+		"pattern": {
+			"regexp": "luac: (.+?\\..+?):(\\d+): (.+)",
+			"file": 1,
+			"location": 2,
+			"code": 3,
+			"message": 3
 		}
-	]
+	}
 }

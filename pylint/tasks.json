@@ -1,0 +1,18 @@
+// Python linting with pylint
+{
+	"version": "0.1.0",
+	"command": "pylint",
+	"isShellCommand": true,
+	"args": ["--output-format=parseable","${file}"],
+	"showOutput": "silent",
+	"problemMatcher": {
+		"fileLocation": ["relative", "${workspaceRoot}"],		
+		"pattern": {
+			"regexp": "(.+):(\\d+): (.+)",
+			"file": 1,
+			"line": 2,
+			"code": 3,
+			"message": 3
+		}
+	}
+}
